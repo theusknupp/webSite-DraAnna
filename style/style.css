@@ -55,8 +55,8 @@ header .LogoOdonto img.logo-preta {
 
 header.rolar {
     background-color: #ffffff;
-    padding: 10px 0;
-   
+    padding: 35px 0;
+    height: 14%;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
@@ -75,12 +75,9 @@ header.rolar .btn-contato button:hover {
 }
 
 header.rolar .LogoOdonto .logo-branca {
-    display: none;
-}
-
-header.rolar .LogoOdonto.logo-preta {
     display: block;
 }
+
 
 /* Fim do estilo do Menu dinâmico */
 
