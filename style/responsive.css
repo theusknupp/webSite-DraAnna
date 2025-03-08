@@ -1,0 +1,25 @@
+@media screen and (max-width: 1100px) { /* Momento em que o menu se quebra */
+    header .Menu-Desktop, header .btn-contato{
+        display: none; /*Escondendo menu*/
+    }
+
+    header .btn-menu-mob {
+        display: block;
+    }
+    
+}
+        
+@media screen and (max-width: 900px) { 
+
+    header .LogoOdonto img { 
+        max-width: 150px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .bemvindo .txt-BemVindo {
+        padding-left: 40px;
+    }
+    
+    
+}

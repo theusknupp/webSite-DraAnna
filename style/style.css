@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* Estilo do header */
+header{
+    background-color: #ffffff;
+
+    width: 100%;
+    height: 12%;
+    padding: 20px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    transition: .5s;
+
+    z-index: 10;
+}
+
+ /* Alinhando itens do header */
+ header .interface{  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Tamanho da logo */
+header .LogoOdonto img { 
+    max-width: 200px;
+}
+
+/* Estilo do menu dinâmico */
+
+header .LogoOdonto img.logo-preta { 
+    display: none;
+}
+
+header.rolar {
+    background-color: #ffffff;
+    padding: 10px 0;
+   
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+header.rolar .Menu-Desktop nav ul li a {
+    color: #000;
+}
+
+header.rolar .btn-contato button{
+    color: #000;
+    border: 1px solid #000;
+}
+
+header.rolar .btn-contato button:hover {
+    background-color: #000;
+    color: white;
+}
+
+header.rolar .LogoOdonto .logo-branca {
+    display: none;
+}
+
+header.rolar .LogoOdonto.logo-preta {
+    display: block;
+}
+
+/* Fim do estilo do Menu dinâmico */
+
+header .Menu-Desktop nav ul {
+    list-style-type: none; /*Retirando as bolinhas da lista*/
+}
+    
+header .Menu-Desktop nav ul li {
+    padding-bottom: 10px;
+    display: inline-block; /*Alinhar o NAV um do lado do outro*/
+    margin: 0 30px; /*Afastamento das opções*/
+} 
+    
+/* Estilo do texto */
+header .Menu-Desktop nav ul li a {
+    color: #1b75bc;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+} 
+    
+/* Haver(Mouse em cima */
+header .Menu-Desktop nav a:hover {
+    transform:scale(1.05);
+}    
+    
+/* Estilo do botão contato*/
+header .btn-contato button {
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid #1b75bc;
+    color: black;
+    cursor: pointer;
+    transition: .5s;
+}
+    
+header .btn-contato button:hover {
+    background-color: black;
+    color: #1b75bc;
+}
+
+
+/* Seção bem vindo */
+section.bemvindo {
+    height: 100vh; /*100% da altura da tela*/
+    background-size: cover; /*Cobrir todo o espaço*/
+    background-position: center;
+    color: #fff;
+    background: linear-gradient(to top, #7bbff3,#d3ecff);
+}
+
+.bemvindo .interface{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.bemvindo .txt-BemVindo h1{
+    font-size: 4em;
+    line-height: 55px;
+    font-weight: 200;
+    color: #000;
+}
+
+/* Jogar o 'Anna' pra baixo  */
+.bemvindo .txt-BemVindo h1 span{
+    text-shadow: 0 0 0.1em rgb(124, 124, 128);
+    display: block;
+    font-weight: 700;
+    color: #0874c7;
+}
+
+.bemvindo .txt-BemVindo p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+    color: rgb(0, 0, 0);
+}
+
+.bemvindo .img-Anna img {
+    max-width: 500px;
+    border: 2px solid #254258;
+    border-radius: 50%;
+}
+
+.bemvindo .img-Anna {
+    gap: 20px;
+    padding-left: 300px;
+}
+
+/* Sobre mim */
+section.Sobre-mim {
+    padding-bottom: 120px;
+    background-color: #dedfe0;
+    color: #171718;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+section.Sobre-mim .txtSobre-Mim h1 {
+    color: #195c83;
+    font-weight: 700px;
+    font-size: 28px;
+    padding: 50px;
+    text-align: center;
+}
+
+section.Sobre-mim .txtSobre-Mim p {
+    margin-left: 200px;
+    margin-right: 200px;
+    color: #1e1e1f;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Atendimento */
+
+section.Atendimento {
+    background-color: #b0bdca;
+    padding: 150px;
+}
+
+section.Atendimento .itens-container {
+    color: #171718;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between; 
+    gap: 10%;
+}
+
+.Atendimento .imgUni img {
+    border-radius: 2px;
+    max-width: 600px;
+    box-shadow: rgba(255, 255, 255, 0.4) -5px 5px, rgba(255, 255, 255, 0.3) -10px 10px, rgba(255, 255, 255, 0.2) -15px 15px, rgba(255, 255, 255, 0.1) -20px 20px, rgba(255, 255, 255, 0.05) -25px 25px;
+}
+
+.Atendimento .txtAtendimento h1 {
+    color: #195c83;
+    font-weight: 700px;
+    font-size: 28px;
+    text-align: left;
+    padding-bottom: 30px;
+}
